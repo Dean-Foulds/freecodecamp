@@ -1,10 +1,9 @@
-
-  $("#search").on("click", function() {
+$("#search").on("click", function() {
+$("#searchCriteria").keypress(function(e) {
+  if (e.which == 13) {
+    $('#search').trigger('click');
+  }
   });
-$("#searchCriteria").keypress(function (e) {
-    if (e.which == 13) {
-      $('#search').trigger('click');
-    }
   var searchCriteria = $("#searchCriteria").val();
   console.log(searchCriteria);
   var url = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + searchCriteria + "&format=json&callback=?";
