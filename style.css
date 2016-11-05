@@ -1,0 +1,19 @@
+body {
+  background-color: #006400;
+}
+
+.padding {
+  padding-top: 30px;
+}
+
+.font-color {
+  color:  #28020e;
+}
+
+h2 + p:hover {
+   color: #28020e;
+}
+
+.background-color {
+  background-color: green;
+}
